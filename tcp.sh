@@ -393,8 +393,8 @@ bash <(curl http://www.78idc.cn/box.sh)
 #开始菜单
 start_menu(){
 clear
-echo && echo -e " 新云TCP加速 一键安装管理脚本 快捷命令./tcp.sh ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- QQ397843| www.78idc.cn --
+echo && echo -e " 阿炮云TCP加速 一键安装管理脚本 快捷命令./tcp.sh ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
+
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
 ————————————内核管理————————————
  ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR/BBR魔改版内核
@@ -409,18 +409,18 @@ echo && echo -e " 新云TCP加速 一键安装管理脚本 快捷命令./tcp.sh 
 ————————————一键安装————————————
  ${Green_font_prefix}9.${Font_color_suffix} 一键自动防御cc攻击
  ${Green_font_prefix}10.${Font_color_suffix} 一键安装宝塔
- ${Green_font_prefix}20.${Font_color_suffix} 一键安装宝塔7.7.0
- ${Green_font_prefix}21.${Font_color_suffix} 一键安装x-ui面板
- ${Green_font_prefix}11.${Font_color_suffix} 一键挂载硬盘
- ${Green_font_prefix}12.${Font_color_suffix} 一键更换国内外通用dns
- ${Green_font_prefix}13.${Font_color_suffix} 一键国内三网测速
- ${Green_font_prefix}14.${Font_color_suffix} 一键更换国内软件源脚本
- ${Green_font_prefix}15.${Font_color_suffix} 一键更换阿里云yum/EPEL源SSH链接卡顿
- ${Green_font_prefix}16.${Font_color_suffix} Linux服务器测试大全脚本【服务器测试专用】
+ ${Green_font_prefix}11.${Font_color_suffix} 一键安装宝塔7.7.0
+ ${Green_font_prefix}12.${Font_color_suffix} 一键安装x-ui面板
+ ${Green_font_prefix}13.${Font_color_suffix} 一键挂载硬盘
+ ${Green_font_prefix}14.${Font_color_suffix} 一键更换国内外通用dns
+ ${Green_font_prefix}15.${Font_color_suffix} 一键国内三网测速
+ ${Green_font_prefix}16.${Font_color_suffix} 一键更换国内软件源脚本
+ ${Green_font_prefix}17.${Font_color_suffix} 一键更换阿里云yum/EPEL源SSH链接卡顿
+ ${Green_font_prefix}18.${Font_color_suffix} Linux服务器测试大全脚本【服务器测试专用】
  ————————————杂项管理————————————
- ${Green_font_prefix}17.${Font_color_suffix} 卸载全部加速
- ${Green_font_prefix}18.${Font_color_suffix} 系统配置优化
- ${Green_font_prefix}19.${Font_color_suffix} 退出脚本
+ ${Green_font_prefix}19.${Font_color_suffix} 卸载全部加速
+ ${Green_font_prefix}20.${Font_color_suffix} 系统配置优化
+ ${Green_font_prefix}21.${Font_color_suffix} 退出脚本
 ————————————————————————————————" && echo
 
 	check_status
@@ -466,37 +466,37 @@ case "$num" in
 	10)
 	bt
     ;;
-	20)
+	11)
 	bt1
     ;;
-	21)
+	12)
 	x-ui
 	;;
-	11)
+	13)
 	yjgz
 	;;
-	12)
+	14)
 	yjdns
 	;;
-	13)
+	15)
 	cs
 	;;
-	14)
+	16)
     rjy
 	;;
-	15)
+	17)
     yum
 	;;
-	16)
+	18)
     fwqcs
 	;;
-	17)
+	19)
 	remove_all
 	;;
-	18)
+	20)
 	optimizing_system
 	;;
-	19)
+	21)
 	exit 1
 	;;
 	*)
