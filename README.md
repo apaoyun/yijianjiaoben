@@ -1,1 +1,1 @@
-wget --no-check-certificate -O tcp.sh http://www.78idc.cn/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+wget --no-check-certificate -O tcp.sh [http://www.78idc.cn/tcp.sh](https://raw.githubusercontent.com/apaoyun/yijianjiaoben/main/tcp.sh)https://raw.githubusercontent.com/apaoyun/yijianjiaoben/main/tcp.sh && chmod +x tcp.sh && ./tcp.sh
