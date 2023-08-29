@@ -503,7 +503,7 @@ case "$num" in
 	;;
 	*)
 	clear
-	echo -e "${Error}:请输入正确数字 [0-19]"
+	echo -e "${Error}:请输入正确数字 [0-21]"
 	sleep 5s
 	start_menu
 	;;
