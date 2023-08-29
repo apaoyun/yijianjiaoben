@@ -409,6 +409,8 @@ echo && echo -e " 新云TCP加速 一键安装管理脚本 快捷命令./tcp.sh 
 ————————————一键安装————————————
  ${Green_font_prefix}9.${Font_color_suffix} 一键自动防御cc攻击
  ${Green_font_prefix}10.${Font_color_suffix} 一键安装宝塔
+ ${Green_font_prefix}20.${Font_color_suffix} 一键安装宝塔7.7.0
+ ${Green_font_prefix}21.${Font_color_suffix} 一键安装x-ui面板
  ${Green_font_prefix}11.${Font_color_suffix} 一键挂载硬盘
  ${Green_font_prefix}12.${Font_color_suffix} 一键更换国内外通用dns
  ${Green_font_prefix}13.${Font_color_suffix} 一键国内三网测速
@@ -463,6 +465,12 @@ case "$num" in
 	;;
 	10)
 	bt
+    ;;
+	20)
+	bt1
+    ;;
+	21)
+	x-ui
 	;;
 	11)
 	yjgz
