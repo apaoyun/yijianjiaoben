@@ -367,6 +367,8 @@ curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/ins
 cc(){
 curl -ko install.sh --connect-timeout  -- 5 --retry-delay 3 https://zhangge.net/wp-content/uploads/files/cckiller/install.sh?ver=1.0.8 && sh install.sh -i
 }
+#-U 参数用来卸载工具，注意是大写哦！
+
 
 #一键国内三网测速
 cs(){
@@ -431,7 +433,7 @@ echo && echo -e " 阿炮云TCP加速 一键安装管理脚本 快捷命令./tcp.
 		
 	fi
 echo
-read -p " 请输入数字 [0-19]:" num
+read -p " 请输入数字 [0-21]:" num
 case "$num" in
 	0)
 	Update_Shell
