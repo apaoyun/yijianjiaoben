@@ -140,7 +140,7 @@ echo && echo -e "
     echo "系统时间：$current_time"
     echo ""
         
-    exit 1"
+    "
 
 
 }
