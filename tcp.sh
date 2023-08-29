@@ -139,8 +139,8 @@ echo && echo -e "
     echo "地理位置: $country $city"
     echo "系统时间：$current_time"
     echo ""
-        "
-    && echo
+        
+    exit 1"
 
 
 }
