@@ -109,7 +109,7 @@ xinxi(){
 
     swap_info="${swap_used}MB/${swap_total}MB (${swap_percentage}%)"
 
-
+echo && echo -e "
 
     echo ""
     echo "系统信息查询"
@@ -139,7 +139,7 @@ xinxi(){
     echo "地理位置: $country $city"
     echo "系统时间：$current_time"
     echo ""
-
+        "
     
 
 
