@@ -483,7 +483,7 @@ wget -O jcnfbox.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcn
 
 #整合脚本工具包 
 huanjing(){
-apt install -y curl wget 2> /dev/null || apt install -y curl wget)
+apt install -y curl wget 2> /dev/null || apt install -y curl wget
 }
 
 #一键安装宝塔英文版
