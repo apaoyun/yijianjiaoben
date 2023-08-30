@@ -476,6 +476,16 @@ x-ui(){
 bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
 }
 
+#整合脚本工具包 
+jcnfbox(){
+wget -O jcnfbox.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcnfbox.sh && chmod +x jcnfbox.sh && clear && ./jcnfbox.sh)
+}
+
+#整合脚本工具包 
+huanjing(){
+apt install -y curl wget 2> /dev/null || apt install -y curl wget)
+}
+
 #一键安装宝塔英文版
 bt(){
 yum install -y wget && wget -O install.sh https://download.bt.cn/install/install_6.0.sh && sh install.sh
@@ -542,10 +552,13 @@ echo && echo -e " 阿炮云TCP加速 一键安装管理脚本 快捷命令./tcp.
  ${Green_font_prefix}16.${Font_color_suffix} 一键更换国内软件源脚本
  ${Green_font_prefix}17.${Font_color_suffix} 一键更换阿里云yum/EPEL源SSH链接卡顿
  ${Green_font_prefix}18.${Font_color_suffix} Linux服务器测试大全脚本【服务器测试专用】
- ————————————杂项管理————————————
- ${Green_font_prefix}19.${Font_color_suffix} 卸载全部加速
- ${Green_font_prefix}20.${Font_color_suffix} 系统配置优化
- ${Green_font_prefix}21.${Font_color_suffix} 退出脚本
+ ————————————整合工具包————————————
+ ${Green_font_prefix}19.${Font_color_suffix} 必须安装新机器
+  ${Green_font_prefix}20.${Font_color_suffix} 整合脚本工具包 
+  ————————————杂项管理————————————
+ ${Green_font_prefix}21.${Font_color_suffix} 卸载全部加速
+ ${Green_font_prefix}22.${Font_color_suffix} 系统配置优化
+ ${Green_font_prefix}23.${Font_color_suffix} 退出脚本
 ————————————————————————————————" && echo
 
 	check_status
@@ -556,7 +569,7 @@ echo && echo -e " 阿炮云TCP加速 一键安装管理脚本 快捷命令./tcp.
 		
 	fi
 echo
-read -p " 请输入数字 [0-21]:" num
+read -p " 请输入数字 [0-23]:" num
 case "$num" in
 	01)
 	xinxi
@@ -617,19 +630,25 @@ case "$num" in
 	;;
 	18)
     fwqcs
-	;;
+    	;;
 	19)
-	remove_all
-	;;
+	huanjing
+     	;;
 	20)
-	optimizing_system
+	jcnfbox
 	;;
 	21)
+	remove_all
+	;;
+	22)
+	optimizing_system
+	;;
+	23)
 	exit 1
 	;;
 	*)
 	clear
-	echo -e "${Error}:请输入正确数字 [0-21]"
+	echo -e "${Error}:请输入正确数字 [0-23]"
 	sleep 5s
 	start_menu
 	;;
